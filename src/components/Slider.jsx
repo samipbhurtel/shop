@@ -29,7 +29,7 @@ const Slider = () => {
         <ArrowLeftOutlined />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
-        <Slide bg="red">
+        <Slide bg="#f5d5d3">
           <ImgContainer>
             <Image src="https://i.ibb.co/GvKKNq6/shopping.png" />
           </ImgContainer>
@@ -39,7 +39,7 @@ const Slider = () => {
             <Button>SHOP NOW</Button>
           </InfoContainer>
         </Slide>
-        <Slide bg="orange">
+        <Slide bg="#f2e7e6">
           <ImgContainer>
             <Image src="https://i.ibb.co/GvKKNq6/shopping.png" />
           </ImgContainer>
@@ -49,7 +49,7 @@ const Slider = () => {
             <Button>SHOP NOW</Button>
           </InfoContainer>
         </Slide>
-        <Slide bg="blue">
+        <Slide bg="#bda4a2">
           <ImgContainer>
             <Image src="https://i.ibb.co/GvKKNq6/shopping.png" />
           </ImgContainer>
