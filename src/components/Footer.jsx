@@ -9,15 +9,18 @@ import {
   Room,
   Twitter,
 } from "@mui/icons-material";
+import { iPad, mobile } from "../responsive";
 
 const Container = styled.div`
   display: flex;
+  ${mobile({ flexDirection: "column" })}
 `;
 const Left = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
   padding: 20px;
+  ${iPad({ flex: "2" })}
 `;
 
 const Logo = styled.h1``;
@@ -43,6 +46,8 @@ const Center = styled.div`
   flex: 1;
   padding: 20px;
   margin-top: 10px;
+  ${mobile({ display: "none" })}
+  ${iPad({ display: "none" })}
 `;
 const Title = styled.h3`
   margin-bottom: 40px;
@@ -57,11 +62,13 @@ const List = styled.ul`
 const ListItem = styled.li`
   width: 50%;
   margin-bottom: 10px;
+  cursor: pointer;
 `;
 const Right = styled.div`
   flex: 1;
   padding: 20px;
   margin-top: 10px;
+  ${mobile({ backgroundColor: "#d8d3d3" })}
 `;
 
 const ContactItem = styled.div`

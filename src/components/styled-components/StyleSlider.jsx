@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { mobile } from "../../responsive";
+import { iPad } from "../../responsive";
 
 export const Container = styled.div`
   width: 100%;
@@ -8,6 +10,8 @@ export const Container = styled.div`
 
   position: relative;
   overflow: hidden;
+  ${mobile({ display: "none" })}
+  ${iPad({ display: "none" })}
 `;
 
 export const Arrow = styled.div`
